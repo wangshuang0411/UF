@@ -79,6 +79,13 @@ $(function(){
        $(".feaContent .content").eq(index).addClass("feaActive").siblings().removeClass("feaActive");
  	});
 
+	// Events tab切换
+	$(".eventsTab a").off("click").on("click",function(){
+       var index = $(this).index();
+       $(this).addClass("eventsBtn").siblings().removeClass("eventsBtn");
+       $(".eventsContent .content").eq(index).addClass("eventsActive").siblings().removeClass("eventsActive");
+ 	});
+
   	var swiperSchool = new Swiper('.feaSchool', {
 	    slidesPerView: 4,
 	    slidesPerColumn: 2,
