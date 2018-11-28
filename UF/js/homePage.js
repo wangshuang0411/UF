@@ -122,6 +122,12 @@ $(function(){
 		 return false; //阻止默认时间
 	});
 
+	// Magazines tab切换
+	$(".magazinesTab a").off("click").on("click",function(){
+       var index = $(this).index();
+       $(this).addClass("magazinesBtn").siblings().removeClass("magazinesBtn");
+       $(".magazinesContent .content").eq(index).addClass("magazinesActive").siblings().removeClass("magazinesActive");
+ 	});
 
 
 
