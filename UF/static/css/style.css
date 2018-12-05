@@ -46,9 +46,7 @@ body {
     height: 0;
     clear: both;
 }
-.clearfix {
-    overflow: hidden;
-}
+
 /*a标签样式*/
 a {
     color: #222;
@@ -299,6 +297,9 @@ a:active {
     border-bottom: 2px solid #000;
     background: #F5F5F5;
 }
+.navBorder .navUl {
+    position: relative;
+}
 .navBorder .navUl > li {
     float: left;
     width: 8%;
@@ -318,7 +319,6 @@ a:active {
 }
 .navBorder .navUl > li:first-child {
     text-align: left;
-    position: relative;
 }   
 .navBorder .navUl > li:last-child {
     text-align: right;
@@ -339,8 +339,8 @@ a:active {
     display: block;
 }
 .navBorder .navUl .dropdown-menu {
-    left: -12%;
     min-width: 100px;
+    left: -1%;
 }
 .navBorder .navUl .dropdown-menu li {
     width: 100%;
@@ -441,7 +441,7 @@ a:active {
     float: left;
     height: 40px;
 }
-.commonBox .commonTitle span {
+.commonBox .commonTitle > span {
     background: #FF7700;
     font-size: 18px;
     color: #fff;
@@ -454,13 +454,13 @@ a:active {
 }
 .commonBox .commonTab a {
     cursor: pointer;
-    padding: 14px 10px 6px 10px; 
+    padding: 14px 10px 8px 10px; 
     margin: 0 20px;
     position: relative; 
 }
 .commonBox .commonTab a:hover {
     color: #FF7700;
-    border-bottom: 4px solid #FF7700;
+    border-bottom: 2px solid #FF7700;
 }
 .commonBox .commonTab a:before {
     content: '|';
@@ -485,7 +485,7 @@ a:active {
 }
 .commonBox .commonTab a.feaBtn {
     color: #FF7700;
-    border-bottom: 4px solid #FF7700;
+    border-bottom: 2px solid #FF7700;
 }
 .swiper-container {
     width: 100%;
@@ -509,11 +509,11 @@ a:active {
 .feaContent .swiper-slide a {
     display: inline-block;
     position: relative;
-    height: 120px;
+    height: 160px;
 }
 .feaContent .swiper-slide img {
     width: 100%;
-    height: 120px;
+    height: 160px;
 }
 .feaContent .swiper-slide p {
     position: absolute;
@@ -536,12 +536,14 @@ a:active {
 }
 
 /*--- 侧边邮箱，post ---*/
-.sideTopBox {
+.treebox {
     background: #fff;
+    padding-top: 10px;
 }
 .sideEmailBox {
     padding: 10px 10% 0 10%;
     text-align: center;
+    background: #fff;
 }
 .sideEmailBox p {
     font-size: 18px;
@@ -578,10 +580,11 @@ a:active {
     text-align: center;
     padding-bottom: 8px;
 }
-.treebox .postTitle span {
+.treebox .postTitle > span {
     padding-bottom: 10px;
     font-size: 18px;
     border-bottom: 1px solid #FF7700;
+    padding: 0 10px 12px 10px;
 }
 .treebox .menu { 
     box-sizing: border-box;
@@ -680,11 +683,11 @@ a:active {
 }
 .commonBox .commonTab.eventsTab a {
     margin: 0 10px;
-    padding: 14px 10px 7px 10px;
+    padding: 14px 10px 9px 10px;
 }
 .commonBox .commonTab a.eventsBtn {
     color: #FF7700;
-    border-bottom: 4px solid #FF7700;
+    border-bottom: 2px solid #FF7700;
 }
 .eventsContent .eventsPer {
     overflow: hidden;
@@ -720,7 +723,7 @@ a:active {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     padding-bottom: 12px;
-    height: 62px;
+    height: 55px;
 }
 .eventsContent .eventsPer > div:nth-child(2) a p:nth-child(2) {
     font-size: 14px;
@@ -869,12 +872,12 @@ a:active {
 
 /*--- Magazines ---*/
 .magazinesBoxBig {
-    margin: 16px 0;
+    margin-top: 16px;
     height: 348px;
 }
 .commonBox .commonTab a.magazinesBtn {
     color: #FF7700;
-    border-bottom: 4px solid #FF7700;
+    border-bottom: 2px solid #FF7700;
 }
 .magazinesContent .content {
     display: none;
@@ -885,7 +888,7 @@ a:active {
     display: block;
 }
 .commonBox .commonTab.magazinesTab a {
-    padding: 14px 30px 7px 30px;
+    padding: 14px 30px 9px 30px;
 }
 .magazinesBox {
     overflow: hidden;
@@ -939,10 +942,12 @@ a:active {
     color: #0A59A8;
     border: 1px solid #0A59A8;
 }
-
+.footer {
+    margin-top: 16px;
+}
 /*--- 侧边thmart ---*/
 .martBox {
-    margin: 16px 0;
+    margin-top: 16px;
 }
 .marttreebox {
     background: #fff;
@@ -954,9 +959,6 @@ a:active {
     display: inline-block;
     vertical-align: text-top;
     padding-left: 12px;
-}
-.treebox.marttreebox .postTitle {
-    padding: 6px 0;
 }
 .martContent {
     padding: 16px 16px 0 16px;
@@ -999,8 +1001,389 @@ a:active {
     padding-right: 16px;
 }
 
+/*--- directory ---*/
+.eventsmartContent.martContent .row .col-sm-4 img {
+    height: 58px;
+}
+.eventstreeBox {
+    margin-top: 16px;
+}
+.rightCenterAd img {
+    width: 100%;
+    margin-top: 16px;
+}
+.topSelectBox {
+    background: #fff;
+    padding: 15px 0 0 15px;
+    box-sizing: border-box;
+}
+.topSelectBox .col-sm-2 {
+    border-right: 1px solid #EEEEEE;
+    width: 14%;
+}
+.topSelectBox .col-sm-10 {
+    width: 86%;
+}
+.topSelectBox .col-sm-10 ul {
+    overflow: hidden;
+}
+.topSelectBox .col-sm-10 ul li {
+    float: left;
+}
+.topSelectBox .col-sm-10 ul li a {
+    display: inline-block;
+    padding: 0 20px 12px 14px;
+    font-size: 14px;
+}
+.topSelectBox .col-sm-10 ul li:hover a, .topSelectBox .col-sm-10 ul li:active a  {
+    color: #FF7700;
+}
+
+.morePageBox {
+    margin-top: 16px;
+}
+.morePageBox .orangBg {
+    padding: 16px;
+    background: #FDE7D5;
+}
+.morePageBox .orangBg.whiteBg {
+    background: #fff;
+}
+.morePageBox .orangBg .row {
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 16px; 
+    position: relative; 
+}
+.morePageBox .orangBg .sponsor {
+    position: absolute;
+    right: -14%;
+}
+.morePageBox .orangBg .sponsor img {
+    width: 50%;
+}
+.morePageBox .orangBg.whiteBg .row {
+    padding-top: 0;
+    padding-right: 0; 
+    border-bottom: 1px solid #eee;   
+}
+.morePageBox .orangBg .row:last-child {
+    margin-bottom: 0;  
+}
+.morePageBox .orangBg.whiteBg .row:last-child {
+    padding-bottom: 0; 
+    border-bottom: none; 
+}
+.morePageBox .orangBg .row .col-sm-4 img {
+    width: 100%;
+    height: 160px;
+}
+.morePageBox .orangBg .row .col-sm-8 {
+    padding-left: 22px;
+}
+.morePageBox .orangBg .row .col-sm-8 > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 24px;
+    margin-bottom: 14px;
+}
+.morePageBox .orangBg .row .col-sm-8 > p a {
+    font-size: 18px;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p {
+    overflow: hidden;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p i {
+    display: inline-block;
+    color: #666;
+    float: left;
+    width: 17%;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p span {
+    float: left;
+    width: 83%;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p {
+    margin-bottom: 6px;
+}
+.morePageBox .orangBg .row .col-sm-8 > div a {
+    font-size: 14px;
+    color: #666;
+    padding: 3px 8px;
+    margin-right: 8px;
+    background: #FFF0E4;
+    border-radius: 12px;
+ }
+.morePageBox .orangBg .row .col-sm-8 > div a.bg {
+    color: #FF7700;
+}
+
+.page-run {
+    text-align: center;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+}
+.pagination > li {
+    display: inline-block;
+}
+
+/*--- 首页2 ---*/
+.carousel-inner>.item>a>img {
+    height: 300px;
+    width: 100%;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.Carousel-box .index-Carousel .carousel-control {
+    font-size: 55px;  
+    top: 30%;
+}
+.Carousel-box .index-Carousel .carousel .carousel-caption {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 16px;
+    background-color: rgba(0,0,0,.4);
+}
+.Carousel-box .index-Carousel .carousel .carousel-caption a {
+    color: #fff;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 50px;
+}
+.homeRightTopAd {
+    margin: 16px 0;
+}
+.commonBox.articlesBox.articlesBoxTwo {
+    height: 300px;
+    margin-top: 16px;
+}
+.eventsContent.eventContent {
+    height: 267px;
+}
+.indexTopLeft {
+    margin: 16px 0;
+}
+.unknow {
+    height: 130px;
+    background: #FBD2AD;
+    margin: 16px 0;
+}
+.col-sm-9 .feaContent .content.feaActive.contents {
+    display: block;
+    height: 400px;
+}
+.sideEmailBox button.subscribe {
+    margin: 20px 0 15px 0;
+}
+.indexTopLeft .col-sm-7 {
+    box-sizing: border-box;
+    padding-right: 16px;
+}
+
+.directoryBox .title {
+    height: 28px;
+    line-height: 28px;
+    background: #118CCF;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+.directoryBox .title > span {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.commonBox.featuredBox .commonTab a {
+    margin: 0 12px 0 10px;
+}
+.directoryBox .scroll {
+    overflow: hidden;
+    height: 272px;
+}
+.zUIpanelScrollBox,.zUIpanelScrollBar{
+    width: 10px;
+    top: 4px;
+    right: 2px;
+    border-radius: 5px;
+    
+}
+.zUIpanelScrollBox{
+    border: 1px solid black;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+.zUIpanelScrollBar{
+    background: #ccc;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.directoryBox .btn-default {
+    background-color: #118CCF;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 0;
+    box-shadow: none;
+}
+.directoryBox .btn-default:hover {
+    box-shadow: none;
+    border: none;
+    color: #fff;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .filter-option:hover {
+    background-color: #118CCF;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .filter-option:active {
+    border: none;
+    color: #fff;
+}
+.directoryBox .btn-default.active, .directoryBox .btn-default:active, .directoryBox .open>.dropdown-toggle.btn-default {
+    background-color: #118CCF;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .caret:hover {
+    color: #fff;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .caret:active {
+    color: #fff;
+}
+.directoryBox .dropdown-menu {
+    left: -14px;
+}
+.commonBox .commonTitle.citiesTitle  {
+    background: #FF7700;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(-112deg, transparent 15px, #FF7700 0);
+    display: inline-block;
+    width: 26%;
+    padding: 0 16px; 
+}
+.citiesTitle .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 67%;
+}
+.citiesTitle .btn-default {
+    background: #FF7700;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.citiesTitle .bootstrap-select .dropdown-toggle:focus {
+    outline: none;
+    border: none !important:;
+}
+.citiesTitle .bootstrap-select>.dropdown-toggle:active {
+    border: none;
+    outline: none;
+}
 
 
+
+
+
+.directoryBox .box {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 16px 24px 0 16px;
+    height: 272px;
+}
+.directoryBox .box .col-sm-4
+img {
+    width: 100%;
+    padding-right: 16px;
+    height: 52px;
+}
+.directoryBox .box .row {
+    padding-bottom: 12px;
+}
+.directoryBox .box .col-sm-4 a {
+    display: inline-block;
+    width: 98px;
+    height: 53px;
+}
+.directoryBox .box .col-sm-8 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 44px;
+    overflow: hidden;
+}
+
+.col-sm-9 .citiesContent .content {
+    display: none;
+}
+.col-sm-9 .citiesContent .content.citiesActive {
+    display: block;
+}
+.commonBox .commonTab a.citiesBtn {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+}
+.commonBox.citiesBox .commonTab a {
+    margin: 0 12px 0 4px;
+}
+.citiesContent {
+    padding: 12px 16px 0 16px;
+}
+
+.cityPer .row {
+    padding-bottom: 14px;
+}
+.cityPer .row .col-sm-3 img {
+    width: 96%;
+    padding-right: 16px;
+    height: 104px;
+}
+.cityPer .row .col-sm-9 a {
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 26px;
+}
+.cityPer .row .col-sm-9 p {
+    color: #666;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 48px;
+}
+.cityPer .row .col-sm-9 span {
+    color: #666;
+    font-size: 14px;
+}
+.commonBox.citiesBox {
+    height: 996px;
+}
+.treebox .postTitle.cityTitle {
+    padding-bottom: 4px;
+}
+.eventstreeBox .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 40%;
+}
+.eventstreeBox .btn-default {
+    border: none;
+}
 
 
 
