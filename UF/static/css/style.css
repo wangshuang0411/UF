@@ -90,6 +90,9 @@ a:active {
     padding: 0;
     margin: 0;
 }
+.h1, .h2, .h3, h1, h2, h3 {
+    margin: 0;
+}
 .pagination>.active>a, 
 .pagination>.active>a:focus, 
 .pagination>.active>a:hover, 
@@ -1290,10 +1293,6 @@ a:active {
     outline: none;
 }
 
-
-
-
-
 .directoryBox .box {
     background: #fff;
     box-sizing: border-box;
@@ -1383,6 +1382,70 @@ img {
 }
 .eventstreeBox .btn-default {
     border: none;
+}
+.eventstreeBox .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+.eventstreeBox .btn-default:focus {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+.home-sm-9 > .articleDetail {
+    background: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 16px;
+}
+.home-sm-9 > .articleDetail .hasPicture {
+    width: 100%;
+    text-align: center;
+}
+.home-sm-9 > .articleDetail > h3 {
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+.home-sm-9 > .articleDetail .author {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 42px;
+    overflow: hidden;
+}
+.home-sm-9 > .articleDetail .author span:first-child {
+    font-size: 14px;
+    color: #666;
+}
+.home-sm-9 > .articleDetail .author span:nth-child(2) {
+    float: right;
+}
+.home-sm-9 > .articleDetail .author span:nth-child(2) a {
+    padding-left: 10px;
+}
+.home-sm-9 > .articleDetail .contentDetail img {
+    padding-bottom: 16px; 
+}
+.home-sm-9 > .articleDetail .contentDetail p {
+    padding-bottom: 16px;
+}
+.home-sm-9 > .articleDetail .contentDetail {
+    border-bottom: 1px solid #eee;
+}
+.home-sm-9 > .articleDetail .tips a {
+    font-size: 14px;
+    color: #666;
+    padding: 3px 8px;
+    margin-right: 8px;
+    background: #FFF0E4;
+    border-radius: 12px;
+}
+.home-sm-9 > .articleDetail .tips {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.home-sm-9 > .articleDetail .tips a.bg {
+    color: #FF7700;
 }
 
 
